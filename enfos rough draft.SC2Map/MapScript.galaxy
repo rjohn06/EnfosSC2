@@ -1,0 +1,158 @@
+//==================================================================================================
+// 
+// Generated Map Script
+// 
+// Name:   Tel's Enfo Remake
+// Author: Telonicus - 364
+// 
+//==================================================================================================
+include "TriggerLibs/NativeLib"
+include "TriggerLibs/NativeLib"
+include "TriggerLibs/NativeLib"
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+void InitLibs () {
+    libNtve_InitLib();
+    libNtve_InitLib();
+    libNtve_InitLib();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger Variables
+//--------------------------------------------------------------------------------------------------
+trigger gt_MeleeInitialization;
+trigger gt_Player1Odin;
+trigger gt_Player1Karass;
+trigger gt_MatchStart;
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Melee Initialization
+//--------------------------------------------------------------------------------------------------
+bool gt_MeleeInitialization_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TimerStart(TimerCreate(), 60.0, true, c_timeGame);
+    TimerWindowCreate(TimerLastStarted(), StringExternal("Param/Value/0B9856BD"), true, false);
+    TimerWindowSetFormat(TimerWindowLastCreated(), StringToText("<min2/>:<sec2/>"));
+    MeleeInitResources();
+    libNtve_gf_SetAlliance(1, 2, 1);
+    libNtve_gf_SetAlliance(1, 3, 1);
+    libNtve_gf_SetAlliance(1, 4, 1);
+    libNtve_gf_SetAlliance(2, 3, 1);
+    libNtve_gf_SetAlliance(2, 4, 1);
+    libNtve_gf_SetAlliance(3, 4, 1);
+    libNtve_gf_SetAlliance(5, 6, 1);
+    libNtve_gf_SetAlliance(5, 7, 1);
+    libNtve_gf_SetAlliance(5, 8, 1);
+    libNtve_gf_SetAlliance(6, 7, 1);
+    libNtve_gf_SetAlliance(6, 8, 1);
+    libNtve_gf_SetAlliance(7, 8, 1);
+    MeleeInitAI();
+    libNtve_gf_SetAlliance(1, 0, 8);
+    libNtve_gf_SetAlliance(2, 0, 8);
+    libNtve_gf_SetAlliance(3, 0, 8);
+    libNtve_gf_SetAlliance(4, 0, 8);
+    libNtve_gf_SetAlliance(5, 0, 8);
+    libNtve_gf_SetAlliance(6, 0, 8);
+    libNtve_gf_SetAlliance(7, 0, 8);
+    libNtve_gf_SetAlliance(8, 0, 8);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MeleeInitialization_Init () {
+    gt_MeleeInitialization = TriggerCreate("gt_MeleeInitialization_Func");
+    TriggerAddEventMapInit(gt_MeleeInitialization);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Player1 - Odin
+//--------------------------------------------------------------------------------------------------
+bool gt_Player1Odin_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitRemove(EventUnit());
+    UnitCreate(1, "Odin", 0, 1, PointFromId(49), 270.0);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Player1Odin_Init () {
+    gt_Player1Odin = TriggerCreate("gt_Player1Odin_Func");
+    TriggerAddEventUnitRangePoint(gt_Player1Odin, UnitRefFromUnit(UnitFromId(51)), PointFromId(39), 1.0, true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Player1 - Karass
+//--------------------------------------------------------------------------------------------------
+bool gt_Player1Karass_Func (bool testConds, bool runActions) {
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    UnitRemove(EventUnit());
+    UnitCreate(1, "Karass", 0, 1, PointFromId(49), 270.0);
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_Player1Karass_Init () {
+    gt_Player1Karass = TriggerCreate("gt_Player1Karass_Func");
+    TriggerAddEventUnitRangePoint(gt_Player1Karass, UnitRefFromUnit(UnitFromId(51)), PointFromId(40), 1.0, true);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger: Match Start
+//--------------------------------------------------------------------------------------------------
+bool gt_MatchStart_Func (bool testConds, bool runActions) {
+    // Variable Declarations
+    timer lv_waveTimer;
+
+    // Variable Initialization
+    lv_waveTimer = TimerCreate();
+
+    // Actions
+    if (!runActions) {
+        return true;
+    }
+
+    TimerStart(TimerCreate(), 90.0, true, c_timeGame);
+    TimerWindowCreate(TimerLastStarted(), StringExternal("Param/Value/F77FB2E1"), true, false);
+    TimerWindowSetFormat(TimerWindowLastCreated(), StringToText("<min2/>:<sec2/>"));
+    TimerWindowShow(TimerWindowLastCreated(), PlayerGroupAlliance(c_playerGroupEnemy, 9), true);
+    TimerRestart(TimerLastStarted());
+    return true;
+}
+
+//--------------------------------------------------------------------------------------------------
+void gt_MatchStart_Init () {
+    gt_MatchStart = TriggerCreate("gt_MatchStart_Func");
+    TriggerAddEventTimeElapsed(gt_MatchStart, 30.0, c_timeGame);
+}
+
+//--------------------------------------------------------------------------------------------------
+// Trigger Initialization
+//--------------------------------------------------------------------------------------------------
+void InitTriggers () {
+    gt_MeleeInitialization_Init();
+    gt_Player1Odin_Init();
+    gt_Player1Karass_Init();
+    gt_MatchStart_Init();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Map Initialization
+//--------------------------------------------------------------------------------------------------
+void InitMap () {
+    InitLibs();
+    InitTriggers();
+}

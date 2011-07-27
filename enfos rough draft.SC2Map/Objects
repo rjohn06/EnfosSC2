@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlacedObjects Version="26">
+    <ObjectUnit Id="14" Position="68.2697,11.92,0" Scale="1,1,1" UnitType="Beacon_Protoss"/>
+    <ObjectUnit Id="33" Position="60,100,0" Scale="1,1,1" UnitType="Beacon_Protoss" Player="1"/>
+    <ObjectUnit Id="13" Position="59.96,12.3098,0" Scale="1,1,1" UnitType="Beacon_Protoss"/>
+    <ObjectUnit Id="16" Position="84.0898,11.7,0" Scale="1,1,1" UnitType="Beacon_Protoss"/>
+    <ObjectUnit Id="15" Position="76.15,12.0297,0" Scale="1,1,1" UnitType="Beacon_Protoss"/>
+    <ObjectUnit Id="34" Position="196,99.5,0" Scale="1,1,1" UnitType="Beacon_Zerg" Player="5"/>
+    <ObjectUnit Id="55" Position="36.605,19.2314,0" Scale="1,1,1" UnitType="Drone" Player="5"/>
+    <ObjectUnit Id="59" Position="43.2307,21.5974,0" Scale="1,1,1" UnitType="Drone" Player="8"/>
+    <ObjectUnit Id="57" Position="43.0974,14.5551,0" Scale="1,1,1" UnitType="Drone" Player="7"/>
+    <ObjectUnit Id="56" Position="35.9006,10.628,0" Scale="1,1,1" UnitType="Drone" Player="6"/>
+    <ObjectUnit Id="35" Position="219.5,99.5,0" Scale="1,1,1" UnitType="Hatchery" Player="14"/>
+    <ObjectUnit Id="37" Position="172.5,99.5,0" Rotation="5.81" Scale="1,1,1" UnitType="HydraliskDen" Player="14"/>
+    <ObjectUnit Id="36" Position="212.5,99.5,0" Rotation="5.7575" Scale="1,1,1" UnitType="InfestationPit" Player="14"/>
+    <ObjectUnit Id="18" Position="67.7797,19.75,0" Rotation="2.6022" Scale="1,1,1" UnitType="Karass"/>
+    <ObjectUnit Id="24" Position="83.5,99.5,0" Rotation="5.496" Scale="1,1,1" UnitType="Nexus" Player="13"/>
+    <ObjectUnit Id="21" Position="37,99,0" Rotation="2.3554" Scale="1,1,1" UnitType="Obelisk" Player="13"/>
+    <ObjectUnit Id="17" Position="60,19,0" Rotation="0.9868" Scale="1,1,1" UnitType="Odin"/>
+    <ObjectUnit Id="51" Position="13.091,19.7343,0" Scale="1,1,1" UnitType="Probe" Player="1"/>
+    <ObjectUnit Id="52" Position="13.18,13.3271,0" Scale="1,1,1" UnitType="Probe" Player="2"/>
+    <ObjectUnit Id="53" Position="19.1994,12.1542,0" Scale="1,1,1" UnitType="Probe" Player="3"/>
+    <ObjectUnit Id="54" Position="18.0275,20.172,0" Scale="1,1,1" UnitType="Probe" Player="4"/>
+    <ObjectUnit Id="20" Position="84,20.5,0" Rotation="4.7397" Scale="1,1,1" UnitType="RaynorCommando"/>
+    <ObjectUnit Id="38" Position="180.5,99.5,0" Rotation="5.7053" Scale="1,1,1" UnitType="RoachWarren" Player="14"/>
+    <ObjectUnit Id="23" Position="76.5,99.5,0" Rotation="0.7851" Scale="1,1,1" UnitType="TemplarArchive" Player="13"/>
+    <ObjectUnit Id="22" Position="44.5,99.5,0" Rotation="5.496" Scale="1,1,1" UnitType="TwilightCouncil" Player="13"/>
+    <ObjectUnit Id="31" Position="192,217,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="7"/>
+    <ObjectUnit Id="32" Position="200,217,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="8"/>
+    <ObjectUnit Id="29" Position="192,204,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="5"/>
+    <ObjectUnit Id="28" Position="64,217,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="4"/>
+    <ObjectUnit Id="25" Position="56,204,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="1"/>
+    <ObjectUnit Id="27" Position="56,217,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="3"/>
+    <ObjectUnit Id="26" Position="64,204,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="2"/>
+    <ObjectUnit Id="30" Position="200,204,0" Scale="1,1,1" UnitType="XelNagaShrineXil" Player="6"/>
+    <ObjectUnit Id="19" Position="75.8598,20.14,0" Rotation="2.4716" Scale="1,1,1" UnitType="Zeratul"/>
+    <ObjectPoint Id="1" Position="159.5,249.5,0" Scale="1,1,1" Type="StartLoc" Name="Spawn Start 1 Left" Color="0,0,0,0"/>
+    <ObjectPoint Id="2" Position="232.5,249.5,0" Scale="1,1,1" Type="StartLoc" Name="Spawn Start 1 Right" Color="0,0,0,0"/>
+    <ObjectPoint Id="3" Position="95.5,248.5,0" Scale="1,1,1" Type="StartLoc" Name="Spawn Start 2 Left" Color="0,0,0,0"/>
+    <ObjectPoint Id="4" Position="23.5,248.5,0" Scale="1,1,1" Type="StartLoc" Name="Spawn Start 2 Right" Color="0,0,0,0"/>
+    <ObjectPoint Id="5" Position="13.5,20.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 1 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="6" Position="13.5,13.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 2 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="7" Position="19.5,12.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 3 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="8" Position="18.5,19.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 4 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="9" Position="36.5,19.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 5 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="10" Position="36.5,10.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 6 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="11" Position="43.5,14.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 7 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="12" Position="43.5,21.5,0" Scale="1,1,1" Type="StartLoc" Name="Player 8 Spawn" Color="0,0,0,0"/>
+    <ObjectPoint Id="39" Position="60.5,12,0" Scale="1,1,1" Type="Normal" Name="Odin Hero Selection" Color="0,0,0,0"/>
+    <ObjectPoint Id="40" Position="68.5,11.5,0" Scale="1,1,1" Type="Normal" Name="Kassar Hero Selection" Color="0,0,0,0"/>
+    <ObjectPoint Id="41" Position="76,11.5,0" Scale="1,1,1" Type="Normal" Name="Zeratul Hero Selection" Color="0,0,0,0"/>
+    <ObjectPoint Id="42" Position="84,11.5,0" Scale="1,1,1" Type="Normal" Name="Raynor Hero Selection" Color="0,0,0,0"/>
+    <ObjectPoint Id="43" Position="60,100,0" Scale="1,1,1" Type="Normal" Name="End Portal Team 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="44" Position="196,99.5,0" Scale="1,1,1" Type="Normal" Name="End Portal Team 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="45" Position="24,244,0" Scale="1,1,1" Type="Normal" Name="Spawn Point Left 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="46" Position="95.5,241.5,0" Scale="1,1,1" Type="Normal" Name="Spawn Point Right 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="47" Position="160,240.5,0" Scale="1,1,1" Type="Normal" Name="Spawn Point Left 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="48" Position="233,240.5,0" Scale="1,1,1" Type="Normal" Name="Spawn Point Right 2" Color="0,0,0,0"/>
+    <ObjectPoint Id="49" Position="60,84,0" Scale="1,1,1" Type="Normal" Name="Spawn Point Team 1" Color="0,0,0,0"/>
+    <ObjectPoint Id="50" Position="196,84,0" Scale="1,1,1" Type="Normal" Name="Spawn Point Team 2" Color="0,0,0,0"/>
+</PlacedObjects>
