@@ -7,15 +7,11 @@
 // 
 //==================================================================================================
 include "TriggerLibs/NativeLib"
-include "TriggerLibs/NativeLib"
-include "TriggerLibs/NativeLib"
 
 //--------------------------------------------------------------------------------------------------
 // Library Initialization
 //--------------------------------------------------------------------------------------------------
 void InitLibs () {
-    libNtve_InitLib();
-    libNtve_InitLib();
     libNtve_InitLib();
 }
 
