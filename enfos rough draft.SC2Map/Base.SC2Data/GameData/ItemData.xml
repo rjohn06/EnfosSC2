@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="us-ascii"?>
-<Catalog>
-    <CItem id="12SlotBag">
-        <CarryWeaponArray Link="AutoTurret" Turret="AutoTurret"/>
-    </CItem>
-</Catalog>

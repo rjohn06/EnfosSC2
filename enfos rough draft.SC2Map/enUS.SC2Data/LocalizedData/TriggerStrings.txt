@@ -1,5 +1,0 @@
-Trigger/Name/15F60400=Melee Initialization
-Trigger/Name/6297A6B6=Player1 - Odin
-Trigger/Name/72207E79=Player1 - Karass
-Trigger/Name/A3D4E607=Match Start
-Variable/Name/7FB44394=Wave Timer
