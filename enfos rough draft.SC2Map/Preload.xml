@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<Preload>
+    <Terrain id="BelShir"/>
+    <Unit id="Beacon_Zerg"/>
+    <Unit id="Zeratul"/>
+    <Unit id="RaynorCommando"/>
+    <Unit id="Probe"/>
+    <Unit id="Obelisk"/>
+    <Unit id="XelNagaShrineXil"/>
+    <Unit id="InfestationPit"/>
+    <Unit id="RoachWarren"/>
+    <Unit id="Hatchery"/>
+    <Unit id="Beacon_Protoss"/>
+    <Unit id="Nexus"/>
+    <Unit id="Karass"/>
+    <Unit id="HydraliskDen"/>
+    <Unit id="Odin"/>
+    <Unit id="TemplarArchive"/>
+    <Unit id="Drone"/>
+    <Unit id="TwilightCouncil"/>
+</Preload>
